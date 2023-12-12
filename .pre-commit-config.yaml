@@ -21,6 +21,8 @@ repos:
     hooks:
       - id: pylint
         args: ["--max-line-length=119", "--disable=C0116"]
+        additional_dependencies:
+          - requests
   - repo: https://github.com/PYCQA/flake8
     rev: 6.1.0
     hooks:
